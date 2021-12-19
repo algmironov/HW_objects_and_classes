@@ -7,10 +7,24 @@ public class Main {
         Author kenKouzen = new Author("Кен", "Коузен");
         Book javaForAll = new Book("Java для всех", alexeyVasilev, 2019);
         Book modernJava = new Book("Современный Java", kenKouzen, 2019);
+
+
+        Object[] books = {javaForAll, modernJava};
+
+        printBooks(books);
+
+        System.out.println(books[1].toString());
+
         modernJava.setYearOfPublishing(2017);
-        System.out.println(javaForAll.getYearOfPublishing());
-        System.out.println(modernJava.getYearOfPublishing());
-        System.out.println(modernJava.getAuthor());
-        System.out.println(javaForAll.getName());
+
+    }
+
+    public static void printBooks(Object[] books) {
+        for (Object book : books) {
+            System.out.println(book.toString());
+        }
     }
 }
+
+
+

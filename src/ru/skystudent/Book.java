@@ -26,5 +26,10 @@ public class Book {
     public void setYearOfPublishing(int yearOfPublishing) {
         this.yearOfPublishing = yearOfPublishing;
     }
+
+    public String toString() {
+       //return getName() + getAuthor() + getYearOfPublishing();
+        return this.name;
+    }
 }
 
