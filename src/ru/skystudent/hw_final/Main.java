@@ -10,8 +10,6 @@ public class Main {
 
         javaForAll.toString();
 
-
-
         Object[] books = {javaForAll, modernJava};
 
         printBooks(books);
@@ -21,6 +19,11 @@ public class Main {
         modernJava.setYearOfPublishing(2017);
 
         System.out.println(modernJava);
+
+        System.out.println(modernJava.hashCode());
+
+        System.out.println(javaForAll.equals(modernJava));
+
 
     }
 
