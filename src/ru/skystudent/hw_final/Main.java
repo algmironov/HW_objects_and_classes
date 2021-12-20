@@ -1,4 +1,4 @@
-package ru.skystudent;
+package ru.skystudent.hw_final;
 
 public class Main {
 
@@ -8,6 +8,7 @@ public class Main {
         Book javaForAll = new Book("Java для всех", alexeyVasilev, 2019);
         Book modernJava = new Book("Современный Java", kenKouzen, 2019);
 
+        javaForAll.toString();
 
         Object[] books = {javaForAll, modernJava};
 
@@ -16,6 +17,13 @@ public class Main {
         System.out.println(books[1].toString());
 
         modernJava.setYearOfPublishing(2017);
+
+        System.out.println(modernJava);
+
+        System.out.println(modernJava.hashCode());
+
+        System.out.println(javaForAll.equals(modernJava));
+
 
     }
 
